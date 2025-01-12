@@ -1,0 +1,251 @@
+@media (min-width: 1024px){
+  .project-section {
+    width: 100vw;
+    height: 80vh;
+    padding: 50px 20px;
+    background-color: #0b061f; /* Updated background color */
+    color: #fff; /* Ensure text is readable on dark background */
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Heading style */
+  .project-text {
+    margin-bottom: 30px;
+  }
+  
+  .project-text h1 {
+    font-size: 2.5rem;
+    color: #f5bde6; /* Light pink for the heading */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #f5bde6;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Project cards container */
+  .project-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+  /* Individual project card */
+  .project-card {
+    background-color: #1c1232; /* Slightly lighter shade of background */
+    border: 2px solid #f5bde6; /* Light pink border */
+    border-radius: 8px;
+    width: 250px; /* Smaller card size */
+    height: 300px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Card hover effect */
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Project title inside card */
+  .project-card h1 {
+    font-size: 1.3rem;
+    color: #f5bde6; /* Light pink for titles */
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Project description */
+  .project-card p {
+    font-size: 0.95rem;
+    color: #ddd;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  /* GitHub link styling */
+  .project-card a {
+    text-decoration: none;
+    color: #f5bde6; /* Light pink for links */
+    font-weight: bold;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+    color: #ffccff; /* Slightly lighter pink on hover */
+  }
+  
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+  .project-section {
+    width: 100vw;
+    height: 80vh;
+    padding: 50px 20px;
+    background-color: #0b061f; /* Updated background color */
+    color: #fff; /* Ensure text is readable on dark background */
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Heading style */
+  .project-text {
+    margin-bottom: 30px;
+  }
+  
+  .project-text h1 {
+    font-size: 2.5rem;
+    color: #f5bde6; /* Light pink for the heading */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #f5bde6;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Project cards container */
+  .project-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+  /* Individual project card */
+  .project-card {
+    background-color: #1c1232; /* Slightly lighter shade of background */
+    border: 2px solid #f5bde6; /* Light pink border */
+    border-radius: 8px;
+    width: 15rem; /* Smaller card size */
+    height: 15rem;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Card hover effect */
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Project title inside card */
+  .project-card h1 {
+    font-size: 1.3rem;
+    color: #f5bde6; /* Light pink for titles */
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Project description */
+  .project-card p {
+    font-size: 0.95rem;
+    color: #ddd;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: #f5bde6; 
+    font-weight: bold;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+    color: #ffccff; 
+  }
+}
+
+@media (max-width: 768px) {
+  .project-section {
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 20px;
+    background-color: #0b061f; /* Updated background color */
+    color: #fff; /* Ensure text is readable on dark background */
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  /* Heading style */
+  .project-text {
+    margin-bottom: 30px;
+  }
+  
+  .project-text h1 {
+    font-size: 2.5rem;
+    color: #f5bde6; /* Light pink for the heading */
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #f5bde6;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Project cards container */
+  .project-div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  
+  /* Individual project card */
+  .project-card {
+    background-color: #1c1232; /* Slightly lighter shade of background */
+    border: 2px solid #f5bde6; /* Light pink border */
+    border-radius: 8px;
+    width: 15rem; /* Smaller card size */
+    height: 15rem;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Card hover effect */
+  .project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Project title inside card */
+  .project-card h1 {
+    font-size: 1.3rem;
+    color: #f5bde6; /* Light pink for titles */
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Project description */
+  .project-card p {
+    font-size: 0.95rem;
+    color: #ddd;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: #f5bde6; 
+    font-weight: bold;
+  }
+  
+  .project-card a:hover {
+    text-decoration: underline;
+    color: #ffccff; 
+  }
+}
+

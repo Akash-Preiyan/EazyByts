@@ -1,0 +1,446 @@
+*{
+  overflow-x: hidden;
+
+}
+@media (min-width: 1024px){
+  .home-component {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 0;
+    position: relative;
+  }
+  
+  
+  .home-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #0b061f; /* Black background */
+    padding: 50px;
+  }
+  
+  
+  .home-left p {
+    font-family: 'Courier New', Courier, monospace;
+    color:  #ff00ff;
+    font-size: 2rem;
+  }
+  
+  .home-left h1{
+    color:  #ff00ff;
+    font-size: 4rem;
+  }
+  
+  .icons {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .home-left a{
+    width: 70px;
+    height: 70px;
+    color: #ff00ff;
+  }
+  #resume{
+    width: 120px;
+  }
+  
+  .home-left > a > button {
+    margin-top: 10px;
+  }
+  
+  .github{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .linkedin{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .insta{
+    width: 50px;
+    height: 50px;
+  }
+  .wave {
+    display: inline-block;
+    animation: wave-animation 2s infinite;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .home-right {
+    flex: 1;
+    border-left: 100px solid #0b061f;
+    border-top: 190px solid transparent;
+    border-bottom: 195px solid transparent;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    background-color: #ff00ff; /* Pink background */
+    box-sizing: border-box;
+    overflow: hidden;  /* Prevent overflow */
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .home-right img {
+    width: 260px; /* Ensure the image stays within a fixed size */
+    height: 240px; /* Set a max height to prevent overflow */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0b061f;
+    z-index: 1;
+  }
+  
+  
+  .home-right img::after {
+    content: "";
+    position: absolute;
+    padding-top: 200px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #0b061f, transparent);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: shadow-move 3s infinite;
+  }
+  /* Keyframes for shadow movement */
+  @keyframes shadow-move {
+    0%,
+    100% {
+      box-shadow: 0 0 15px 5px #0b061f;
+    }
+    50% {
+      box-shadow: 0 0 30px 10px #0b061f ;
+    }
+  } 
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .home-component {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 0;
+    position: relative;
+  }
+  
+  
+  .home-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: #0b061f; /* Black background */
+    padding: 20px;
+    padding-left: 4rem;
+  }
+  
+  
+  .home-left p {
+    font-family: 'Courier New', Courier, monospace;
+    color:  #ff00ff;
+    font-size: 1rem;
+  }
+  
+  .home-left h1{
+    color:  #ff00ff;
+    font-size: 2.5rem;
+  }
+  
+  .icons {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+  }
+  
+  .home-left a{
+    width: 70px;
+    height: 70px;
+    color: #ff00ff;
+  }
+  #resume{
+    width: 120px;
+  }
+  
+  .home-left > a > button {
+    margin-top: 10px;
+  }
+  
+  .github{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .linkedin{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .insta{
+    width: 50px;
+    height: 50px;
+  }
+  .wave {
+    display: inline-block;
+    animation: wave-animation 2s infinite;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .home-right {
+    flex: 1;
+    border-left: 100px solid #0b061f;
+    border-top: 190px solid transparent;
+    border-bottom: 195px solid transparent;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    background-color: #ff00ff; /* Pink background */
+    box-sizing: border-box;
+    overflow: hidden;  /* Prevent overflow */
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .home-right img {
+    width: 260px; /* Ensure the image stays within a fixed size */
+    height: 240px; /* Set a max height to prevent overflow */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0b061f;
+    z-index: 1;
+  }
+  
+  
+  .home-right img::after {
+    content: "";
+    position: absolute;
+    padding-top: 200px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #0b061f, transparent);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: shadow-move 3s infinite;
+  }
+  /* Keyframes for shadow movement */
+  @keyframes shadow-move {
+    0%,
+    100% {
+      box-shadow: 0 0 15px 5px #0b061f;
+    }
+    50% {
+      box-shadow: 0 0 30px 10px #0b061f ;
+    }
+  } 
+}
+
+@media (max-width: 767px){
+  .home-component {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column     ;
+    gap: 0;
+    position: relative;
+  }
+  
+  
+  .home-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #0b061f;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 4rem;
+  }
+  
+
+  .home-left p {
+    font-family: 'Courier New', Courier, monospace;
+    color:  #ff00ff;
+    font-size: 1rem;
+  }
+  
+  .home-left h1{
+    color:  #ff00ff;
+    font-size: 1.3rem;
+  }
+  
+  .icons {
+    width: 6rem;
+    height: 5rem;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  
+  .home-left a{
+    width: 70px;
+    height: 70px;
+    color: #ff00ff;
+  }
+  #resume{
+    display: none;
+  }
+  
+  .home-left > a > button {
+    margin-top: 10px;
+  }
+  
+  .github{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .linkedin{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .insta{
+    width: 50px;
+    height: 50px;
+  }
+  .wave {
+    display: inline-block;
+    animation: wave-animation 2s infinite;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .home-right {
+    flex: 1;
+    /* border-right: 0px solid #0b061f;
+    border-top: 100px solid transparent;
+    border-bottom: 55px solid transparent; */
+    border-top: 100px solid #0b061f;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    background-color: #ff00ff; /* Pink background */
+    box-sizing: border-box;
+    overflow: hidden;  /* Prevent overflow */
+    margin-top: 0;
+    padding-top: 0;
+  }
+  
+  .home-right img {
+    width: 10rem; 
+    height: 10rem; 
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #0b061f;
+    z-index: 1;
+    /* rotate: 180deg; */
+  }
+  
+  
+  .home-right img::after {
+    content: "";
+    position: absolute;
+    padding-top: 200px;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, #0b061f, transparent);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: shadow-move 3s infinite;
+  }
+  /* Keyframes for shadow movement */
+  @keyframes shadow-move {
+    0%,
+    100% {
+      box-shadow: 0 0 15px 5px #0b061f;
+    }
+    50% {
+      box-shadow: 0 0 30px 10px #0b061f ;
+    }
+  } 
+}

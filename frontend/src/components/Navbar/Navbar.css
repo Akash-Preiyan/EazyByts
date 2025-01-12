@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
+*{
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1024px) {
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Domine;
+    z-index: 1000;
+  }
+  
+  .navscrolled{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Domine;
+    z-index: 1000;
+    background-color: black;
+  }
+  
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    font-size: large;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  h2{
+    color: #ff00ff	;
+  }
+  
+  svg {
+  
+    position: relative;
+    margin-right: 7px;
+    color: white;
+  }
+
+  
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Domine;
+    z-index: 1000;
+  }
+  
+  .navscrolled{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Domine;
+    z-index: 1000;
+    background-color: black;
+  }
+  
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  li{
+    size: 0.7rem;
+  }
+  
+  li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+  }
+  
+  h2{
+    text-decoration: none;
+    color: 	#ff00ff;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  
+  
+  .svg-nav {
+    position: relative;
+    margin-right: 0.3rem;
+    color: white;
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+
+}
+ 
+@media (max-width: 767px) {
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Domine;
+    z-index: 1000;
+  }
+  
+  .navscrolled{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: Domine;
+    z-index: 1000;
+    background-color: black;
+  }
+  
+  .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
+  li{
+    size: 0.5rem;
+  }
+  
+  li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+  }
+  
+  h2{
+    text-decoration: none;
+    color: 	#ff00ff;
+    font-size: 0.8rem;
+    padding-left: 1.5rem;
+  }
+
+  
+  
+  .svg-nav {
+  display: none;
+/* position: relative;
+    margin-right: 0.3rem;
+    color: white;
+    width: 0.9rem;
+    height: 0.9rem;     */
+
+  }
+
+}

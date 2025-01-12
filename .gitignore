@@ -1,0 +1,20 @@
+# Exclude specific files
+secrets.txt
+config.json
+
+# Exclude specific directories
+/node_modules/
+env/
+
+# Exclude all `.env` files
+*.env
+
+# Exclude logs
+*.log
+
+# Include frontend files (if needed, you can manually ensure this is included)
+!frontend/*   # This makes sure that files inside frontend/ are tracked
+
+# If you want to include `package.json` and `package-lock.json` inside `frontend/`:
+!frontend/package.json
+!frontend/package-lock.json
