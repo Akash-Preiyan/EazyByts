@@ -6,6 +6,7 @@ const connecttoDB = require("./config/db.js")
 const Project = require("./models/Project.js")
 const nodemailer = require('nodemailer')
 const bodyParser = require('body-parser')
+const path = require('path')
 
 dotenv.config()
 const PORT = process.env.PORT || 8000;
@@ -16,6 +17,8 @@ const app = express()
 app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true}));
+
+app.use(express.static(path.join(__dirname, "frontend/build")))
 
 
 //routes
@@ -57,6 +60,10 @@ app.post('/api/sendmail', (req, res) => {
       return res.status(200).json({ success: true, message: "Email send successfully!"})
     }
   })
+})
+
+app.get('*', (req,res) => {
+  res.sendFile(path.join(__dirname, 'frontend/build', 'index.html'))
 })
 
 connecttoDB()
