@@ -37,8 +37,10 @@ export default function Contact() {
       });
 
       const result = await response.json();
-      if (response.ok) {
-        alert("Message sent successfully!");
+      console.log("Server response: ",result)
+
+      if (response.ok && result.success) {
+        alert(result.message || "Message sent successfully!");
         setFormData({
           name: "",
           email: "",

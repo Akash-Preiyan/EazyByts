@@ -5,6 +5,7 @@ const mongoose = require('mongoose')
 const connecttoDB = require("./config/db.js")
 const Project = require("./models/Project.js")
 const nodemailer = require('nodemailer')
+const bodyParser = require('body-parser')
 
 dotenv.config()
 const PORT = process.env.PORT || 8000;
@@ -13,19 +14,9 @@ const app = express()
 
 //middlewares
 app.use(cors())
-app.use(express.json())
-app.use(express.urlencoded({ extended: true}));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true}));
 
-//nodemailer setup
-const transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: process.env.SMTP_PORT,
-  secure: false,
-  auth: {
-    user: process.env.EMAIL,
-    pass: process.env.PASS,
-  },
-})
 
 //routes
 app.get('/api/projects', async (req, res) => {
@@ -40,6 +31,16 @@ app.get('/api/projects', async (req, res) => {
 app.post('/api/sendmail', (req, res) => {
   const { name, email, phone, subject, message } = req.body;
 
+  console.log(name,email,phone,subject,message)
+
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.EMAIL,
+      pass: process.env.PASSWORD,
+    },
+  })
+
   const mailOptions = {
     from: email,
     to: process.env.EMAIL,
@@ -50,16 +51,12 @@ app.post('/api/sendmail', (req, res) => {
   transporter.sendMail(mailOptions, (error, info) => {
     if(error) {
       console.error("Error sending mail: ",error)
-      return res.status(500).json({message: "Failed to send Mail"})
+      return res.status(500).json({ success: false, message: "Failed to send mail. "})
+    } else {
+      console.log("Email send: ", info.response)
+      return res.status(200).json({ success: true, message: "Email send successfully!"})
     }
-    res.status(200).json({message: "Email send successfully"})
   })
-
-  console.log('SMTP_HOST:', process.env.SMTP_HOST);
-  console.log('SMTP_PORT:', process.env.SMTP_PORT);
-  console.log('EMAIL:', process.env.EMAIL);
-  console.log('PASSWORD:', process.env.PASSWORD ? '***' : 'Not Set');
-
 })
 
 connecttoDB()
